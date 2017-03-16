@@ -1,8 +1,8 @@
 object Form1: TForm1
   Left = 270
   Top = 124
-  Width = 928
-  Height = 480
+  Width = 966
+  Height = 457
   Caption = 'Form1'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -12,15 +12,14 @@ object Form1: TForm1
   Font.Style = []
   OldCreateOrder = False
   OnCreate = FormCreate
+  OnMouseDown = FormMouseDown
   PixelsPerInch = 96
   TextHeight = 16
-  object Button1: TButton
-    Left = 432
-    Top = 232
-    Width = 75
-    Height = 25
-    Caption = 'Button1'
-    TabOrder = 0
-    OnClick = Button1Click
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 720
+    Top = 272
   end
 end

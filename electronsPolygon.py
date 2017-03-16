@@ -1,5 +1,7 @@
-xmin = -10
-xmax = 10
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
 def sign(n):
   if n > 0:
@@ -46,3 +48,5 @@ while i < 2000:
   i += 1
 for j in range(len(electrons)):
   print(j, electrons[j].x)
+
+polygon = []

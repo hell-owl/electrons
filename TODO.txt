@@ -1,0 +1,13 @@
+this problem can appear:
+
+if two electrons have same coordinates, we have
+ZeroDivisionException
+
+how to correct:
+
+try:
+	<code>
+except:
+	print('too many electrons')
+
+##################################################
